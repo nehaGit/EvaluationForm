@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="TalentAcquisition.EvalutionForm" BackgroundColor="White">
+	<ScrollView>
+		<StackLayout x:Name="mainLayout" Padding="25,20,25,30">
+		<StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="FillAndExpand">
+		<Image Source="logo.png" />
+			<Label Text="INTERVIEW EVALUTION (for office use only)" VerticalOptions="End" HorizontalOptions="Center" Style="{StaticResource LabelPageHeadingStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="CenterAndExpand">
+					<Label Text="Interview date:" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LabelPageSubHeadingStyle}" />
+					<Label Text="10/02/2016" Style="{StaticResource LabelStyle}" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="CenterAndExpand">
+					<Label Text="Test Given" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LabelPageSubHeadingStyle}" />
+					<Entry Style="{StaticResource EntryStyle}" WidthRequest="100" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="CenterAndExpand">
+					<Label Text="Score" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LabelPageSubHeadingStyle}" />
+					<Entry Style="{StaticResource EntryStyle}" WidthRequest="100" />
+				</StackLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="Recruiters Evaluation:-(Recommendation)" Style="{StaticResource LabelStyle}" />
+				<StackLayout Orientation="Horizontal" HorizontalOptions="End" Spacing="10" WidthRequest="200">
+					<Image x:Name="imgRecommendYes" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapingRecommendYes" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="Yes" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+					<Image x:Name="imgRecommendNo" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapingRecommendNo" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="No" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+				</StackLayout>
+			</StackLayout>
+			<Entry Style="{StaticResource EntryStyle}" />
+			<Label Text="Technical/Functional Evaluation" Style="{StaticResource LabelStyle}" />
+			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="40" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="S.No" BackgroundColor="#D3D3D3" Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="Evaluation parameters (List the skills you have analyzed)" BackgroundColor="#D3D3D3" Grid.Row="0" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="Technical/Functional panel-1 (Rate out of 5)" BackgroundColor="#D3D3D3" Grid.Row="0" Grid.Column="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="Technical/Functional panel-2 (Rate out of 5)" BackgroundColor="#D3D3D3" Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelGrid}" />
+				<Label Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelGrid}" Text="1" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="3" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<Label Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelGrid}" Text="2" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="3" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<Label Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelGrid}" Text="3" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<Label Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelGrid}" Text="4" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="3" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<Label Grid.Row="5" Grid.Column="0" Style="{StaticResource LabelGrid}" Text="5" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="3" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+			</Grid>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="Comments (Technical/Functional Panel):-(Recommendation)" Style="{StaticResource LabelStyle}" />
+				<StackLayout Orientation="Horizontal" HorizontalOptions="End" Spacing="10" WidthRequest="200">
+					<Image x:Name="imgTechRecommendYes" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapTechRecommenYes" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="Yes" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+					<Image x:Name="imgTechRecommendNo" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapimgTechRecommenNo" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="No" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+				</StackLayout>
+			</StackLayout>
+			<Entry Style="{StaticResource EntryStyle}" />
+			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="Soft Skills" Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="Technical/Functional Panel" Grid.Row="0" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="Final Panel" Grid.Row="0" Grid.Column="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="HR" Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+			</Grid>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Current CTC" Style="{StaticResource LabelPageSubHeadingStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text=" Expected CTC" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text=" CTC Range Suggested" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text=" Offered CTC" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text=" NP" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<Label Text="Final Decision" Style="{StaticResource LabelPageSubHeadingStyle}" HorizontalOptions="CenterAndExpand" />
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Recommended for other/suitable position/Dep." Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}"  />
+			</StackLayout>
+			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="Designation / Grade" Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="Department" Grid.Row="0" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="Gross Salary" Grid.Row="0" Grid.Column="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="PBI%" Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="PBI Review month" Grid.Row="0" Grid.Column="4" Style="{StaticResource LabelGrid}" />
+				<Label Text="Salary Hike review month" Grid.Row="0" Grid.Column="5" Style="{StaticResource LabelGrid}" />
+				<Label Text="Provident fund" Grid.Row="0" Grid.Column="6" Style="{StaticResource LabelGrid}" />
+				<Label Text="date of joining" Grid.Row="0" Grid.Column="7" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="4" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="5" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="6" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="7" Style="{StaticResource EntryGrid}" />
+				<Label Text="Optional Components" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="LTA" Grid.Row="2" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="Medical" Grid.Row="2" Grid.Column="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="Food Coupon" Grid.Row="2" Grid.Column="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="Gift Coupon" Grid.Row="2" Grid.Column="4" Style="{StaticResource LabelGrid}" />
+				<Label Text="ESI" Grid.Row="2" Grid.Column="5" Style="{StaticResource LabelGrid}" />
+				<Label Text="Relocation" Grid.Row="2" Grid.Column="6" Style="{StaticResource LabelGrid}" />
+				<Label Text="Any other commitment (NP/Buyout/JB)" Grid.Row="2" Grid.Column="7" Style="{StaticResource LabelGrid}" />
+				<Label Text="Filled by recuiter" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="4" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="5" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="6" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="7" Style="{StaticResource EntryGrid}" />
+			</Grid>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Vendor Cost:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text="Vendor Name" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Other offer conditions:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Reporting Manager:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text="Location" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Recruiter:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text="Source of profile(Portal/Vendor/Referral)" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Amount of commitment made(NP/Buyout/JB/Relocation):" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Technical/Functional Interview Panel name::" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

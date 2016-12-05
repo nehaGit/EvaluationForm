@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" x:Class="TalentAcquisition.InterviewForm" BackgroundColor="White">
+	<ScrollView>
+		<StackLayout x:Name="mainLayout" Padding="25,20,25,30">
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<StackLayout HorizontalOptions="FillAndExpand">
+					<Label Text="ICREON COMMUNICATION PVT LTD" VerticalOptions="Center" Style="{StaticResource LabelPageHeadingStyle}" />
+					<Label Text="68AD, NSEZ, Noida U.P/ C-103,Sector-2, Noida" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LabelPageSubHeadingStyle}" />
+					<StackLayout Padding="0,5,0,10" Spacing="0" HorizontalOptions="CenterAndExpand">
+						<Label Text="Position applied for" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LabelStyle}" />
+						<Entry Style="{StaticResource EntryStyle}" WidthRequest="200" />
+					</StackLayout>
+				</StackLayout>
+				<Image Source="user.png" BackgroundColor="#D3D3D3" VerticalOptions="Center" HorizontalOptions="End" />
+			</StackLayout>
+			<Label Text="PERSONAL DATA" Style="{StaticResource LabelPageSubHeadingStyle}" />
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="First Name" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text="Last Name" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Father's/Spouse Name:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Permanent Address:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Present Address:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Mobile No." Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" Keyboard="Numeric" />
+				<Label Text="landline No." Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" Keyboard="Numeric" />
+				<Label Text="Email:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" Keyboard="Email" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="Skype ID:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text="Passport No." Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text="Any Valid Visa:" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="ID(Voter/Adhaar/DL/PAN)" Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text="ID No." Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="Date/Month/Year of Birth" Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="Place of Birth" Grid.Row="0" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="Nationality" Grid.Row="0" Grid.Column="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="Martial Status" Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="Sex" Grid.Row="0" Grid.Column="4" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="4" Style="{StaticResource EntryGrid}" />
+			</Grid>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="EDUCATION DETAILS" Style="{StaticResource LabelPageSubHeadingStyle}" />
+				<Label Text="(Please mention education qualifications details,starting with latest first)" Style="{StaticResource LabelStyle}" />
+			</StackLayout>
+			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="Year" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="Course/Specialization" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="School/College/University" Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="% Marks" Grid.Row="0" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="From" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelGrid}"  />
+				<Label Text="To" Grid.Row="1" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<Label Text="" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<Label Text="" Grid.Row="1" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<Label Text="Langauges Known" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="Speak" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="Read" Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="Write" Grid.Row="5" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="7" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="7" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="8" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+			</Grid>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="EMPLOYMENT HISTORY" Style="{StaticResource LabelPageSubHeadingStyle}" />
+				<Label Text=" (begin with recent employment)" Style="{StaticResource LabelStyle}" />
+			</StackLayout>
+			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="Duration" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="Employer name and address" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="Designation" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="6" Style="{StaticResource LabelGrid}" />
+				<Label Text="Reason for leaving" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="8" Style="{StaticResource LabelGrid}" />
+				<Label Text="From" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="To" Grid.Row="1" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="No. of Months" Grid.Row="1" Grid.Column="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="On Joining" Grid.Row="1" Grid.Column="6" Style="{StaticResource LabelGrid}" />
+				<Label Text="On Leaving" Grid.Row="1" Grid.Column="7" Style="{StaticResource LabelGrid}" />
+				<Label Text="" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="8" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="6" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="7" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="6" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="7" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="6" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="7" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="6" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="7" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="6" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="7" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+			</Grid>
+			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+				<Label Text="TECHNICAL SKILLS" Style="{StaticResource LabelPageSubHeadingStyle}" />
+				<Label Text=" (priority wise) if applicable" Style="{StaticResource LabelStyle}" />
+			</StackLayout>
+			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="40" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="Sr.No" Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="Expertise (e.g. php,.net,flash etc)" Grid.Row="0" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="Technical certification received (for e.g. Microsoft,CCNA etc" Grid.Row="0" Grid.Column="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="Year of recieving certification" Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="1" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<Label Text="2" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<Label Text="3" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+			</Grid>
+			<Label Text="FAMILY DETAILS" Style="{StaticResource LabelPageSubHeadingStyle}" />
+			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="40" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="Sr. No" Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="Name" Grid.Row="0" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="Relation" Grid.Row="0" Grid.Column="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="Occupation" Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="Dependent(yes/no)" Grid.Row="0" Grid.Column="4" Style="{StaticResource LabelGrid}" />
+				<Label Text="1" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="4" Style="{StaticResource EntryGrid}" />
+				<Label Text="2" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="4" Style="{StaticResource EntryGrid}" />
+				<Label Text="3" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="4" Style="{StaticResource EntryGrid}" />
+				<Label Text="4" Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="4" Style="{StaticResource EntryGrid}" />
+			</Grid>
+			<StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="FillAndExpand">
+				<Label Text="Do you have any relation/friends working in Icreon" Style="{StaticResource LabelStyle}" />
+				<StackLayout Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
+					<Image x:Name="imgRelationYes" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapimgRelationYes" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="Yes" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+					<Image x:Name="imgRelationNo" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapimgRelationNo" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="No" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+				</StackLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" Spacing="20">
+				<Label Text="If yes, please mention the name: " Style="{StaticResource LabelStyle}" />
+				<Entry Style="{StaticResource EntryStyle}" />
+			</StackLayout>
+			<Label>
+				<Label.FormattedText>
+					<FormattedString>
+						<Span Text="REFERENCES" ForegroundColor="Black" FontAttributes="Bold" Font="16f">
+						</Span>
+						<Span Font="15f" ForegroundColor="Black" Text=" (Please do not give any references of relatives and Icreon Employes. Mention any professional references from your previous employer here)">
+						</Span>
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="40" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Label Text="Sr. No" Grid.Row="0" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<Label Text="Name" Grid.Row="0" Grid.Column="1" Style="{StaticResource LabelGrid}" />
+				<Label Text="Designation" Grid.Row="0" Grid.Column="2" Style="{StaticResource LabelGrid}" />
+				<Label Text="Employer" Grid.Row="0" Grid.Column="3" Style="{StaticResource LabelGrid}" />
+				<Label Text="Contact Number" Grid.Row="0" Grid.Column="4" Style="{StaticResource LabelGrid}" />
+				<Label Text="1" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="4" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<Label Text="2" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="4" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<Label Text="3" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="4" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+				<Label Text="4" Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="1" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="4" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
+			</Grid>
+			<StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="FillAndExpand">
+				<Label Text="Have you undergone any major surgery/illness" Style="{StaticResource LabelStyle}" />
+				<StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="10">
+					<Image x:Name="imgillnessYes" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapimgillnessYes" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="Yes" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+					<Image x:Name="imgillnessNo" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapimgillnessNo" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="No" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+				</StackLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+				<Label Text="Have you ever been convicted by any court for any criminal offence or sentenced to imprisonment,or any criminal proceedings are pending against you." Style="{StaticResource LabelStyle}" HeightRequest="60" />
+				<StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="10" WidthRequest="126" >
+					<Image x:Name="imgCrimeYes" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapimgCrimeYes" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="Yes" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+					<Image x:Name="imgCrimeNo" Source="unchecked.png" HeightRequest="18" WidthRequest="18">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapimgCrimeNo" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+					<Label Text="No" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

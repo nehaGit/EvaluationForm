@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TalentAcquisition.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<Color x:Key="PageBackgroundColor">Yellow</Color>
+			<Color x:Key="HeadingTextColor">Black</Color>
+			<Color x:Key="NormalTextColor">Blue</Color>
+			<Style x:Key="LabelPageHeadingStyle" TargetType="Label">
+				<Setter Property="FontAttributes" Value="Bold" />
+				<Setter Property="HorizontalOptions" Value="Center" />
+				<Setter Property="HeightRequest" Value="30" />
+				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
+				<Setter Property="Font" Value="22f" />
+			</Style>
+			<Style x:Key="LabelPageSubHeadingStyle" TargetType="Label">
+				<Setter Property="FontAttributes" Value="Bold" />
+				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
+				<Setter Property="Font" Value="16f" />
+				<Setter Property="HeightRequest" Value="30" />
+			</Style>
+			<Style x:Key="LabelStyle" TargetType="Label">
+				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
+				<Setter Property="Font" Value="15f" />
+				<Setter Property="HeightRequest" Value="30" />
+			</Style>
+			<Style x:Key="EntryStyle" TargetType="Entry">
+				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
+				<Setter Property="VerticalOptions" Value="Center" />
+				<Setter Property="HeightRequest" Value="30" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+			</Style>
+			<Style x:Key="LabelGrid" TargetType="Label">
+				<Setter Property="BackgroundColor" Value="White" />
+				<Setter Property="FontAttributes" Value="Bold" />
+				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
+				<Setter Property="Font" Value="16f" />
+				<Setter Property="HeightRequest" Value="35" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+			</Style>
+			<Style x:Key="EntryGrid" TargetType="Entry">
+			<Setter Property="BackgroundColor" Value="White" />
+				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
+				<Setter Property="VerticalOptions" Value="End" />
+				<Setter Property="HeightRequest" Value="35" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TalentAcquisition.MenuPage" Padding="0,0,0,0" Icon="menu.png" BackgroundColor="White" Title="Icreon">
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="FillAndExpand">
+			<StackLayout BackgroundColor="#384653" HeightRequest="150">
+				<Image Source="logo.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+			</StackLayout>
+			<ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None" RowHeight="50">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout Padding="20,5,5,5" Spacing="25" HorizontalOptions="Start" Orientation="Horizontal">
+								<Image Source="{Binding IconSource}" HorizontalOptions="Start" HeightRequest="20" WidthRequest="20" />
+								<Label  Text="{Binding Title}" Font="18f" TextColor="#384653" HorizontalOptions="Start" VerticalOptions="Center" />
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
