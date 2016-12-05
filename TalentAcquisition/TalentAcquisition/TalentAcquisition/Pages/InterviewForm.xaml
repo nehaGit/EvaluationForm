@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" x:Class="TalentAcquisition.InterviewForm" BackgroundColor="White">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" x:Class="TalentAcquisition.InterviewForm" BackgroundColor="White" Title="Interview Form">
 	<ScrollView>
 		<StackLayout x:Name="mainLayout" Padding="25,20,25,30">
 			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
@@ -8,51 +8,51 @@
 					<Label Text="68AD, NSEZ, Noida U.P/ C-103,Sector-2, Noida" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LabelPageSubHeadingStyle}" />
 					<StackLayout Padding="0,5,0,10" Spacing="0" HorizontalOptions="CenterAndExpand">
 						<Label Text="Position applied for" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LabelStyle}" />
-						<Entry Style="{StaticResource EntryStyle}" WidthRequest="200" />
+						<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" WidthRequest="200" />
 					</StackLayout>
 				</StackLayout>
 				<Image Source="user.png" BackgroundColor="#D3D3D3" VerticalOptions="Center" HorizontalOptions="End" />
 			</StackLayout>
 			<Label Text="PERSONAL DATA" Style="{StaticResource LabelPageSubHeadingStyle}" />
-			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+			<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
 				<Label Text="First Name" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 				<Label Text="Last Name" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" />
 			</StackLayout>
-			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+			<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
 				<Label Text="Father's/Spouse Name:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" />
 			</StackLayout>
-			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+			<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
 				<Label Text="Permanent Address:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  HorizontalOptions="FillAndExpand" Style="{StaticResource EntryStyle}" />
 			</StackLayout>
-			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+			<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
 				<Label Text="Present Address:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" />
 			</StackLayout>
-			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+			<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
 				<Label Text="Mobile No." Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" Keyboard="Numeric" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" Keyboard="Numeric" />
 				<Label Text="landline No." Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" Keyboard="Numeric" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" Keyboard="Numeric" />
 				<Label Text="Email:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" Keyboard="Email" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" Keyboard="Email" />
 			</StackLayout>
-			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+			<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
 				<Label Text="Skype ID:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" />
 				<Label Text="Passport No." Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" />
 				<Label Text="Any Valid Visa:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" />
 			</StackLayout>
-			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+			<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
 				<Label Text="ID(Voter/Adhaar/DL/PAN)" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" />
 				<Label Text="ID No." Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" />
 			</StackLayout>
 			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
 				<Grid.RowDefinitions>
@@ -114,21 +114,21 @@
 				<Label Text="" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<Label Text="" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<Label Text="" Grid.Row="1" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="2" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="0" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
 				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="3" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="0" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="4" Grid.Column="0" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="0" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
 				<local:ExtendedEntry Grid.Row="4" Grid.Column="1" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="4" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
 				<Label Text="Langauges Known" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource LabelGrid}" />
 				<Label Text="Speak" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Style="{StaticResource LabelGrid}" />
 				<Label Text="Read" Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="3" Style="{StaticResource LabelGrid}" />
@@ -183,37 +183,37 @@
 				<Label Text="On Joining" Grid.Row="1" Grid.Column="6" Style="{StaticResource LabelGrid}" />
 				<Label Text="On Leaving" Grid.Row="1" Grid.Column="7" Style="{StaticResource LabelGrid}" />
 				<Label Text="" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="8" Style="{StaticResource LabelGrid}" />
-				<local:ExtendedEntry Grid.Row="2" Grid.Column="0" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="0" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
 				<local:ExtendedEntry Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="2" Grid.Column="6" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="2" Grid.Column="7" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="2" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="3" Grid.Column="0" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="0" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="6" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="7" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="4" Grid.Column="0" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="4" Grid.Column="1" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="4" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="0" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="1" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="4" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
 				<local:ExtendedEntry Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="4" Grid.Column="6" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="4" Grid.Column="7" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="5" Grid.Column="0" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="5" Grid.Column="1" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="5" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="0" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="1" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="5" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
 				<local:ExtendedEntry Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="5" Grid.Column="6" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="5" Grid.Column="7" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="5" Grid.Column="8" Grid.ColumnSpan="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="6" Grid.Column="0" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="6" Grid.Column="1" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="6" Grid.Column="2" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="0" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="1" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
+				<local:ExtendedEntry Grid.Row="6" Grid.Column="2" Style="{StaticResource EntryGrid}" Keyboard="Numeric"/>
 				<local:ExtendedEntry Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="3" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="6" Grid.Column="6" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="6" Grid.Column="7" Style="{StaticResource EntryGrid}" />
@@ -243,15 +243,15 @@
 				<Label Text="1" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelGrid}" />
 				<local:ExtendedEntry Grid.Row="1" Grid.Column="1" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="1" Grid.Column="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="1" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="1" Grid.Column="3" Style="{StaticResource EntryGrid}" Keyboard="Numeric" />
 				<Label Text="2" Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelGrid}" />
 				<local:ExtendedEntry Grid.Row="2" Grid.Column="1" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="2" Grid.Column="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="2" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="2" Grid.Column="3" Style="{StaticResource EntryGrid}"  Keyboard="Numeric" />
 				<Label Text="3" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelGrid}" />
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryGrid}" />
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryGrid}" />
-				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Style="{StaticResource EntryGrid}" />
+				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Style="{StaticResource EntryGrid}"  Keyboard="Numeric" />
 			</Grid>
 			<Label Text="FAMILY DETAILS" Style="{StaticResource LabelPageSubHeadingStyle}" />
 			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
@@ -314,7 +314,7 @@
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="20">
 				<Label Text="If yes, please mention the name: " Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" />
 			</StackLayout>
 			<Label>
 				<Label.FormattedText>

@@ -13,7 +13,7 @@ namespace TalentAcquisition
         {
             InitializeComponent();
 
-			MainPage = new TalentAcquisition.InterviewForm ();//new NavigationPage(new TalentAcquisition.MainPage()){
+			MainPage = new TalentAcquisition.MainPage ();//new NavigationPage(new TalentAcquisition.MainPage()){
 			//	BarBackgroundColor=Color.FromHex("#384653")};
         }
 

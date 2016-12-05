@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Evaluation Form"
  x:Class="TalentAcquisition.EvalutionForm" BackgroundColor="White">
 	<ScrollView>
 		<StackLayout x:Name="mainLayout" Padding="25,20,25,30">
@@ -14,11 +14,11 @@
 				</StackLayout>
 				<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="CenterAndExpand">
 					<Label Text="Test Given" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LabelPageSubHeadingStyle}" />
-					<Entry Style="{StaticResource EntryStyle}" WidthRequest="100" />
+					<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" WidthRequest="100" />
 				</StackLayout>
 				<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="CenterAndExpand">
 					<Label Text="Score" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LabelPageSubHeadingStyle}" />
-					<Entry Style="{StaticResource EntryStyle}" WidthRequest="100" />
+					<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" WidthRequest="100" />
 				</StackLayout>
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
@@ -38,7 +38,7 @@
 					<Label Text="No" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
 				</StackLayout>
 			</StackLayout>
-			<Entry Style="{StaticResource EntryStyle}" />
+			<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 			<Label Text="Technical/Functional Evaluation" Style="{StaticResource LabelStyle}" />
 			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
 				<Grid.RowDefinitions>
@@ -97,7 +97,7 @@
 					<Label Text="No" VerticalTextAlignment="Center" TextColor="Black" HeightRequest="18" />
 				</StackLayout>
 			</StackLayout>
-			<Entry Style="{StaticResource EntryStyle}" />
+			<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
 				<Grid.RowDefinitions>
 					<RowDefinition Height="*" />
@@ -129,21 +129,21 @@
 				<local:ExtendedEntry Grid.Row="3" Grid.Column="3" Style="{StaticResource EntryGrid}" />
 			</Grid>
 			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
-				<Label Text="Current CTC" Style="{StaticResource LabelPageSubHeadingStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text="Current CTC" Style="{StaticResource LabelStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" Keyboard="Numeric" />
 				<Label Text=" Expected CTC" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" Keyboard="Numeric"/>
 				<Label Text=" CTC Range Suggested" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 				<Label Text=" Offered CTC" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" Keyboard="Numeric"/>
 				<Label Text=" NP" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 			</StackLayout>
 			<Label Text="Final Decision" Style="{StaticResource LabelPageSubHeadingStyle}" HorizontalOptions="CenterAndExpand" />
 			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
 				<Label Text="Recommended for other/suitable position/Dep." Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}"  />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}"  />
 			</StackLayout>
 			<Grid ColumnSpacing="1" Padding="1,1,1,1" BackgroundColor="Black" RowSpacing="1">
 				<Grid.RowDefinitions>
@@ -197,33 +197,33 @@
 			</Grid>
 			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
 				<Label Text="Vendor Cost:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 				<Label Text="Vendor Name" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
 				<Label Text="Other offer conditions:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
 				<Label Text="Reporting Manager:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 				<Label Text="Location" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
 				<Label Text="Recruiter:" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 				<Label Text="Source of profile(Portal/Vendor/Referral)" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
 				<Label Text="Amount of commitment made(NP/Buyout/JB/Relocation):" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
-				<Label Text="Technical/Functional Interview Panel name::" Style="{StaticResource LabelStyle}" />
-				<Entry Style="{StaticResource EntryStyle}" />
+				<Label Text="Technical/Functional Interview Panel name:" Style="{StaticResource LabelStyle}" />
+				<local:ExtendedEntry IsSingleLine="true" Style="{StaticResource EntryStyle}" />
 			</StackLayout>
 		</StackLayout>
 	</ScrollView>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TalentAcquisition.SearchPage">
+	<ContentPage.Content>
+		<StackLayout>
+			<ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None" RowHeight="50">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout Padding="20,5,5,5" Spacing="25" HorizontalOptions="Start" Orientation="Horizontal">
+								<Image Source="{Binding IconSource}" HorizontalOptions="Start" HeightRequest="20" WidthRequest="20" />
+								<StackLayout>
+								<Label  Text="{Binding Title}" Font="18f" TextColor="#384653" HorizontalOptions="Start" VerticalOptions="Center" />
+								<Label  Text="{Binding Title}" Font="18f" TextColor="#384653" HorizontalOptions="Start" VerticalOptions="Center" />
+								</StackLayout>
+								</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

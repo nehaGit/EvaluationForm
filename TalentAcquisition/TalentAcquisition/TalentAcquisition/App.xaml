@@ -10,17 +10,17 @@
 				<Setter Property="HorizontalOptions" Value="Center" />
 				<Setter Property="HeightRequest" Value="30" />
 				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
-				<Setter Property="Font" Value="22f" />
+				<Setter Property="Font" Value="20f" />
 			</Style>
 			<Style x:Key="LabelPageSubHeadingStyle" TargetType="Label">
 				<Setter Property="FontAttributes" Value="Bold" />
 				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
-				<Setter Property="Font" Value="16f" />
+				<Setter Property="Font" Value="15f" />
 				<Setter Property="HeightRequest" Value="30" />
 			</Style>
 			<Style x:Key="LabelStyle" TargetType="Label">
 				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
-				<Setter Property="Font" Value="15f" />
+				<Setter Property="Font" Value="14f" />
 				<Setter Property="HeightRequest" Value="30" />
 			</Style>
 			<Style x:Key="EntryStyle" TargetType="Entry">
@@ -33,7 +33,7 @@
 				<Setter Property="BackgroundColor" Value="White" />
 				<Setter Property="FontAttributes" Value="Bold" />
 				<Setter Property="TextColor" Value="{StaticResource HeadingTextColor}" />
-				<Setter Property="Font" Value="16f" />
+				<Setter Property="Font" Value="13f" />
 				<Setter Property="HeightRequest" Value="35" />
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
 				<Setter Property="VerticalTextAlignment" Value="Center" />

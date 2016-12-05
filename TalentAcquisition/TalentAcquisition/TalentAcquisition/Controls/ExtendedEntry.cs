@@ -12,5 +12,6 @@ namespace TalentAcquisition
 {
 	public class ExtendedEntry : Entry
 	{
+		public bool IsSingleLine { get; set;}
 	}
 }
