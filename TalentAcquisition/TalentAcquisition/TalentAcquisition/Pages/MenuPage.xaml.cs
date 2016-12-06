@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace TalentAcquisition
 {
-	public partial class MenuPage : ContentPage
+	public partial class MenuPage : BaseContentPage
 	{
 		public ListView ListView { get { return listView; } }
 
@@ -27,7 +27,7 @@ namespace TalentAcquisition
 			masterPageItems.Add (new MasterPageItem {
 				Title = "Evalution Form",
 				IconSource = "evaluation.png",
-				TargetType = typeof(EvalutionForm)
+				TargetType = typeof(SearchPage)
 			});
 
 			listView.ItemsSource = masterPageItems;

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" x:Class="TalentAcquisition.InterviewForm" BackgroundColor="White" Title="Interview Form">
+<local:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" x:Class="TalentAcquisition.InterviewForm" BackgroundColor="White" Title="Interview Form">
 	<ScrollView>
 		<StackLayout x:Name="mainLayout" Padding="25,20,25,30">
 			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
@@ -11,7 +12,11 @@
 						<local:ExtendedEntry IsSingleLine="true"  Style="{StaticResource EntryStyle}" WidthRequest="200" />
 					</StackLayout>
 				</StackLayout>
-				<Image Source="user.png" BackgroundColor="#D3D3D3" VerticalOptions="Center" HorizontalOptions="End" />
+				<Image  x:Name="pickPhoto" Source="user.png" BackgroundColor="#D3D3D3" VerticalOptions="Center" HorizontalOptions="End" HeightRequest="150" WidthRequest="150" Aspect="Fill">
+				<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="OnTapUserPhoto" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
 			</StackLayout>
 			<Label Text="PERSONAL DATA" Style="{StaticResource LabelPageSubHeadingStyle}" />
 			<StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="FillAndExpand">
@@ -403,4 +408,4 @@
 			</StackLayout>
 		</StackLayout>
 	</ScrollView>
-</ContentPage>
+</local:BaseContentPage>

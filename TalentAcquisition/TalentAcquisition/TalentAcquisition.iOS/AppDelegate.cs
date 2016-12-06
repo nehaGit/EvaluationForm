@@ -23,6 +23,9 @@ namespace TalentAcquisition.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+			UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(56,70,83);
+			UINavigationBar.Appearance.TintColor = UIColor.FromRGB(255,206,30);
+		//	UINavigationBar.Appearance.colo=UIColor.FromRGB(255, 206, 30);
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

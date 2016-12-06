@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Evaluation Form"
+<local:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Title="Evaluation Form"
  x:Class="TalentAcquisition.EvalutionForm" BackgroundColor="White">
 	<ScrollView>
 		<StackLayout x:Name="mainLayout" Padding="25,20,25,30">
@@ -227,4 +227,4 @@
 			</StackLayout>
 		</StackLayout>
 	</ScrollView>
-</ContentPage>
+</local:BaseContentPage>

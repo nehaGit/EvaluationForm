@@ -6,7 +6,7 @@ namespace TalentAcquisition
 	{
 		public int ID{ get; set; }
 
-		public string FisrtName { get; set; }
+		public string FirstName { get; set; }
 
 		public string LastName { get; set; }
 
@@ -18,7 +18,7 @@ namespace TalentAcquisition
 
 		public string SkypeID { get; set; }
 
-		public int Mobile { get; set; } 
+		public long Mobile { get; set; } 
 
 		public string Landline { get; set; }
 

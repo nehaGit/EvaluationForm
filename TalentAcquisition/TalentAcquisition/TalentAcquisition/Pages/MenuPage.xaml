@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TalentAcquisition.MenuPage" Padding="0,0,0,0" Icon="menu.png" BackgroundColor="White" Title="Icreon">
+<local:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TalentAcquisition.MenuPage" Padding="0,0,0,0" Icon="menu.png" BackgroundColor="White" Title="Icreon">
 	<ContentPage.Content>
 		<StackLayout VerticalOptions="FillAndExpand">
 			<StackLayout BackgroundColor="#384653" HeightRequest="150">
@@ -19,4 +21,4 @@
 			</ListView>
 		</StackLayout>
 	</ContentPage.Content>
-</ContentPage>
+</local:BaseContentPage>

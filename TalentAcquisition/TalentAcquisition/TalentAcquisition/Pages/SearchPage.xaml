@@ -1,22 +1,41 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TalentAcquisition.SearchPage">
+<local:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:TalentAcquisition;assembly=TalentAcquisition" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TalentAcquisition.SearchPage">
 	<ContentPage.Content>
-		<StackLayout>
-			<ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None" RowHeight="50">
+		<StackLayout HorizontalOptions="FillAndExpand">
+			<SearchBar Placeholder="Enter interviewee " PlaceholderColor="#D3D3D3" TextColor="Black"  CancelButtonColor="Black" TextChanged="SearchBar_OnTextChanged" />
+			<ListView x:Name="IntervieweelistView" ItemsSource="{Binding IntervieweeList}" VerticalOptions="FillAndExpand" SeparatorVisibility="None" RowHeight="115" SeparatorColor="Black">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
-							<StackLayout Padding="20,5,5,5" Spacing="25" HorizontalOptions="Start" Orientation="Horizontal">
-								<Image Source="{Binding IconSource}" HorizontalOptions="Start" HeightRequest="20" WidthRequest="20" />
-								<StackLayout>
-								<Label  Text="{Binding Title}" Font="18f" TextColor="#384653" HorizontalOptions="Start" VerticalOptions="Center" />
-								<Label  Text="{Binding Title}" Font="18f" TextColor="#384653" HorizontalOptions="Start" VerticalOptions="Center" />
+							<StackLayout>
+								<StackLayout Padding="20,10,5,5" Spacing="25" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+									<Image Source="{Binding Image}" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="50" WidthRequest="50" />
+									<StackLayout Spacing="5" HorizontalOptions="FillAndExpand">
+										<StackLayout Orientation="Horizontal">
+											<Label Text="Name : " Font="18f" TextColor="#384653" Style="{StaticResource LabelPageSubHeadingStyle}" />
+											<Label Text="{Binding FirstName}" Font="18f" TextColor="#384653" Style="{StaticResource LabelStyle}" />
+											<Label Text="{Binding LastName}" Font="18f" TextColor="#384653" Style="{StaticResource LabelStyle}" />
+										</StackLayout>
+										<StackLayout Orientation="Horizontal">
+											<Label Text="Position applied for : " Font="18f" TextColor="#384653" Style="{StaticResource LabelPageSubHeadingStyle}" />
+											<Label Text="{Binding PositionType}" Font="18f" TextColor="#384653" Style="{StaticResource LabelStyle}" />
+										</StackLayout>
+										<StackLayout Orientation="Horizontal">
+											<Label Text="Email : " Font="18f" TextColor="#384653" Style="{StaticResource LabelPageSubHeadingStyle}" />
+											<Label Text="{Binding Email}" Font="18f" TextColor="#384653" Style="{StaticResource LabelStyle}" />
+										</StackLayout>
+										<StackLayout Orientation="Horizontal">
+											<Label Text="Mobile : " Font="18f" TextColor="#384653" Style="{StaticResource LabelPageSubHeadingStyle}" />
+											<Label Text="{Binding Mobile}" Font="18f" TextColor="#384653" Style="{StaticResource LabelStyle}" />
+										</StackLayout>
+									</StackLayout>
 								</StackLayout>
-								</StackLayout>
+								<BoxView HeightRequest="1" BackgroundColor="Black" />
+							</StackLayout>
 						</ViewCell>
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>
 		</StackLayout>
 	</ContentPage.Content>
-</ContentPage>
+</local:BaseContentPage>

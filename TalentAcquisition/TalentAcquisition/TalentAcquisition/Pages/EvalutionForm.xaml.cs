@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace TalentAcquisition
 {
-	public partial class EvalutionForm : ContentPage
+	public partial class EvalutionForm : BaseContentPage
 	{
 		public EvalutionForm ()
 		{

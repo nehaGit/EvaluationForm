@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace TalentAcquisition
 {
-	public partial class HomePage : ContentPage
+	public partial class HomePage : BaseContentPage
 	{
 		public HomePage ()
 		{
